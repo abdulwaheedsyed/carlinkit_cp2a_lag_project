@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------------------
+# NEVER commit firmware blobs, backups, extracted vendor code, disassembly,
+# device keys, or logs. They contain proprietary Carlinkit/Allwinner/Apple-MFi
+# material and your device's private keys / pairing data.
+# ---------------------------------------------------------------------------
+*.bin
+*.sqfs
+*.img
+*.asm
+*.ko
+*.so
+*.key
+*.orig
+*.gz
+stock-flash-backup*
+*backup*
+readback*
+settings_restore*
+rootA/
+rootB/
+root[AB]*/
+extract/
+dump/
+logcat*/
+logcat*
+
+# Rust build output
+rom_watchdog/target/
+target/
+
+# Editor / OS cruft
+.DS_Store
+*.swp
